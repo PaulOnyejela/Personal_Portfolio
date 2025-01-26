@@ -8,34 +8,15 @@ const Footer = () => {
       {/* Container for the footer content */}
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         
-        {/* Top section containing the description and subscription form */}
-        <div className="flex flex-col md:flex-row md:space-x-12 items-center mb-4">
+        {/* Top section containing the description, horizontally centered */}
+        <div className="flex flex-col items-center mb-4"> {/* Only horizontally center the description */}
           
-          {/* Left side: Description about the developer */}
-          <div className="flex-1 mb-4 md:mb-0">
-            <h3 className="text-2xl font-bold mb-2">Amarachukwu</h3>
+          {/* Description about the developer */}
+          <div className="text-center"> {/* Added text-center to center the content */}
+            <h3 className="text-2xl font-bold mb-2">Amarachukwu Onyejela</h3>
             <p className="text-gray-400">
               Front-end Developer based in Nigeria, specializing in web design, UI/UX, graphic design, and video editing.
             </p>
-          </div>
-
-          {/* Right side: Email subscription form */}
-          <div className="flex-1 w-full">
-            <form className="flex items-center justify-center">
-              {/* Email input field */}
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full p-2 rounded-l-lg bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
-              />
-              {/* Subscribe button */}
-              <button
-                type="submit"
-                className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-r-lg"
-              >
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
 
